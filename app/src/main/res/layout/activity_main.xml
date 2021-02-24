@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/flameLogo"
+        android:layout_width="108dp"
+        android:layout_height="116dp"
+        android:contentDescription="TODO"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@drawable/ic_fire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+
+    <TextView
+        android:id="@+id/nameOfApp"
+        android:layout_width="248dp"
+        android:layout_height="38dp"
+        android:text="Fire Alarm System"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.281" />
+
+    <TextView
+        android:id="@+id/statusSystem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="System Status :"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <TextView
+        android:id="@+id/firebaseTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/normal"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
+
+
+    <Button
+        android:id="@+id/sensorStatus"
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:background="@drawable/btn_style"
+        android:drawableLeft="@drawable/ic_smoke_detector"
+        android:onClick="OnclickSensorStatus"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:text="Sensor Status"
+        android:textColor="#FDC830"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603" />
+
+    <Button
+        android:id="@+id/liveStream"
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:background="@drawable/btn_style"
+        android:drawableLeft="@drawable/ic_security_camera"
+        android:onClick="OnclickLive"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:text="Security Camara"
+        android:textColor="#FDC830"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738" />
+
+    <Button
+        android:id="@+id/emergencyCall"
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:background="@drawable/btn_style"
+        android:drawableLeft="@drawable/ic_sos"
+        android:onClick="OnclickEmer"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:text="Emergency Contacts"
+        android:textColor="#FDC830"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <Button
+        android:id="@+id/inforMaker"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:background="@drawable/btn_style"
+        android:drawableTop="@drawable/ic_info"
+        android:onClick="OnclickInfo"
+        android:text="Info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

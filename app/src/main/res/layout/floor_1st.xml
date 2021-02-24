@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background2"
+    tools:context=".Floor1">
+
+
+
+    <TextView
+        android:id="@+id/titlefloor1"
+        android:layout_width="106dp"
+        android:layout_height="36dp"
+        android:text="1st Floor"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+
+    <TextView
+        android:id="@+id/title2floor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensor Status in 1st Floor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-345dp">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.46"
+            android:src="@drawable/plan" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="338dp"
+            android:layout_gravity="center">
+
+
+            <Button
+                android:id="@+id/sensorStatus2"
+                android:layout_width="35dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="251dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="125dp"
+                android:layout_marginBottom="488dp"
+                android:background="@drawable/btn_style"
+                android:drawableTop="@drawable/ic_smoke_detector2"
+                android:onClick="OnclickS2"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:text="S2"
+                android:textColor="#FDC830"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.678"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.525" />
+
+            <Button
+                android:id="@+id/sensorStatus3"
+                android:layout_width="35dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="276dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="297dp"
+                android:background="@drawable/btn_style"
+                android:drawableTop="@drawable/ic_smoke_detector2"
+                android:onClick="OnclickS3"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:text="S3"
+                android:textColor="#FDC830"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.686"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.462" />
+
+            <Button
+                android:id="@+id/sensorStatus"
+                android:layout_width="35dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="94dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginEnd="286dp"
+                android:layout_marginBottom="443dp"
+                android:background="@drawable/btn_style"
+                android:drawableTop="@drawable/ic_smoke_detector2"
+                android:onClick="OnclickS1"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:text="S1"
+                android:textColor="#FDC830"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.357" />
+
+        </FrameLayout>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
