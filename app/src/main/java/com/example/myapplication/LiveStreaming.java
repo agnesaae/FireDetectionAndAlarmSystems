@@ -18,14 +18,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LiveStreaming extends Activity {
 
-    //private WebView liveWeb;
-    GridView gridView;
+    private WebView liveWeb;
+    //GridView gridView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.live_streaming);
-
+        /*
         gridView = (GridView) findViewById(R.id.grid_view);
         gridView.setAdapter(new ImageAdapter(this));
 
@@ -37,7 +37,7 @@ public class LiveStreaming extends Activity {
                 startActivity(intent);
             }
         });
-        /*
+        */
         liveWeb = (WebView) findViewById(R.id.liveWeb);
         liveWeb.setWebViewClient(new WebViewClient());
         liveWeb.loadUrl("https://drive.google.com/drive/folders/186Ib-mfgxIWEJaIfzgWyTrpF7eF_YtBQ?usp=sharing");
@@ -45,7 +45,7 @@ public class LiveStreaming extends Activity {
         WebSettings webSettings = liveWeb.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-         */
+
     }
         /*
     @Override
